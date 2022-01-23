@@ -46,6 +46,8 @@ function main() {
   canvas.onmousedown = (ev) => { click(ev, gl, canvas, a_Position) }
 
   gl.clearColor(0.0, 0.0, 0.0, 1.0)
+
+  gl.clear(gl.COLOR_BUFFER_BIT)
 }
 
 // The array for a mouse press
