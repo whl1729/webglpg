@@ -26,14 +26,14 @@ function main() {
     return
   }
 
+  gl.clearColor(0.0, 0.0, 0.0, 1.0)
+  gl.clear(gl.COLOR_BUFFER_BIT)
+
   const pointCount = initVertexBuffers(gl)
   if (pointCount < 0) {
     console.error('Failed to set the positions of the vertices.')
     return
   }
-
-  gl.clearColor(0.0, 0.0, 0.0, 1.0)
-  gl.clear(gl.COLOR_BUFFER_BIT)
 
   gl.drawArrays(gl.TRIANGLES, 0, pointCount)
 }
