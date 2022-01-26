@@ -45,8 +45,6 @@ function initVertexBuffers(gl) {
     0.5, -0.5,
   ])
 
-  const vertexCnt = 3
-
   const vertexBuffer = gl.createBuffer()
   if (!vertexBuffer) {
     console.error('Failed to create the buffer object.')
@@ -65,5 +63,5 @@ function initVertexBuffers(gl) {
   gl.vertexAttribPointer(a_Position, 2, gl.FLOAT, false, 0, 0)
   gl.enableVertexAttribArray(a_Position)
 
-  return vertexCnt
+  return vertices.length / 2
 }
