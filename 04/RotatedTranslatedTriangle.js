@@ -39,10 +39,6 @@ function main() {
     return
   }
 
-  const radian = Math.PI * ANGLE / 180.0
-  const cosB = Math.cos(radian)
-  const sinB = Math.sin(radian)
-
   // Create Matrix4 object for model transformation
   const modelMatrix = new Matrix4()
   // Set rotation matrix
